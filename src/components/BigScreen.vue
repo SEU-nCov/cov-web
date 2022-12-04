@@ -434,6 +434,8 @@
 				getCityCovData(this.selecetedProvince[0]).then(res => {
 					this.cityCovData = res.data.data[0];
 				})
+				this.getVaccinePointList() ;
+				this.getTestList();
 			},
 			getVaccineTopData() {
 				getVaccineTopData().then(res => {
